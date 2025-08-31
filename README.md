@@ -1,16 +1,16 @@
-# Quick Launch Assistant
+# 快速启动助手
 
-An Android app that allows you to quickly launch your favorite app by setting it as the default assistant.
+一个安卓应用，允许您通过将其设置为默认助手来快速启动您喜欢的应用。
 
-## Features
+## 功能
 
-- Select an app from the list of installed apps.
-- Set this app as the default digital assistant.
-- Launch the selected app by triggering the assistant (e.g., long-pressing the home button).
+- 从已安装的应用列表中选择一个应用。
+- 将此应用设置为默认数字助手。
+- 通过触发助手（例如，长按主屏幕按钮）来启动所选应用。
 
-## How to use
+## 如何使用
 
-1.  Build and install the app.
-2.  Open the app and select an application from the list.
-3.  Go to your device's Settings -> Apps -> Default apps -> Digital assistant app and select "Quick Launch Assistant".
-4.  Trigger the assistant to launch your selected app.
+1.  构建并安装应用。
+2.  打开应用并从列表中选择一个应用程序。
+3.  转到您设备的“设置”->“应用”->“默认应用”->“数字助理应用”，然后选择“快速启动助手”。
+4.  触发助手以启动您选择的应用。
