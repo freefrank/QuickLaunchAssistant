@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">QuickLaunch Assistant</string>
+    <string name="search_apps">Search apps or package names</string>
+    <string name="loading_apps">Loading Applications</string>
+    <string name="progress_placeholder">0 / 0 apps loaded</string>
+    <string name="no_apps_found">No apps found matching your search</string>
+    <string name="select_app">Select an app to launch with assistant</string>
 </resources>

@@ -4,12 +4,19 @@ package pro.dotslash.quicklaunchassistant.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import com.google.android.material.appbar.AppBarLayout;
+import com.google.android.material.progressindicator.CircularProgressIndicator;
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -20,12 +27,48 @@ public final class ActivityMainBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final AppBarLayout appBarLayout;
+
+  @NonNull
+  public final CircularProgressIndicator circularProgress;
+
+  @NonNull
+  public final LinearLayout loadingLayout;
+
+  @NonNull
+  public final TextView loadingText;
+
+  @NonNull
+  public final TextView progressText;
+
+  @NonNull
   public final RecyclerView recyclerView;
 
+  @NonNull
+  public final TextInputEditText searchEditText;
+
+  @NonNull
+  public final TextInputLayout searchLayout;
+
+  @NonNull
+  public final Toolbar toolbar;
+
   private ActivityMainBinding(@NonNull ConstraintLayout rootView,
-      @NonNull RecyclerView recyclerView) {
+      @NonNull AppBarLayout appBarLayout, @NonNull CircularProgressIndicator circularProgress,
+      @NonNull LinearLayout loadingLayout, @NonNull TextView loadingText,
+      @NonNull TextView progressText, @NonNull RecyclerView recyclerView,
+      @NonNull TextInputEditText searchEditText, @NonNull TextInputLayout searchLayout,
+      @NonNull Toolbar toolbar) {
     this.rootView = rootView;
+    this.appBarLayout = appBarLayout;
+    this.circularProgress = circularProgress;
+    this.loadingLayout = loadingLayout;
+    this.loadingText = loadingText;
+    this.progressText = progressText;
     this.recyclerView = recyclerView;
+    this.searchEditText = searchEditText;
+    this.searchLayout = searchLayout;
+    this.toolbar = toolbar;
   }
 
   @Override
@@ -55,13 +98,63 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.appBarLayout;
+      AppBarLayout appBarLayout = ViewBindings.findChildViewById(rootView, id);
+      if (appBarLayout == null) {
+        break missingId;
+      }
+
+      id = R.id.circularProgress;
+      CircularProgressIndicator circularProgress = ViewBindings.findChildViewById(rootView, id);
+      if (circularProgress == null) {
+        break missingId;
+      }
+
+      id = R.id.loadingLayout;
+      LinearLayout loadingLayout = ViewBindings.findChildViewById(rootView, id);
+      if (loadingLayout == null) {
+        break missingId;
+      }
+
+      id = R.id.loadingText;
+      TextView loadingText = ViewBindings.findChildViewById(rootView, id);
+      if (loadingText == null) {
+        break missingId;
+      }
+
+      id = R.id.progressText;
+      TextView progressText = ViewBindings.findChildViewById(rootView, id);
+      if (progressText == null) {
+        break missingId;
+      }
+
       id = R.id.recyclerView;
       RecyclerView recyclerView = ViewBindings.findChildViewById(rootView, id);
       if (recyclerView == null) {
         break missingId;
       }
 
-      return new ActivityMainBinding((ConstraintLayout) rootView, recyclerView);
+      id = R.id.searchEditText;
+      TextInputEditText searchEditText = ViewBindings.findChildViewById(rootView, id);
+      if (searchEditText == null) {
+        break missingId;
+      }
+
+      id = R.id.searchLayout;
+      TextInputLayout searchLayout = ViewBindings.findChildViewById(rootView, id);
+      if (searchLayout == null) {
+        break missingId;
+      }
+
+      id = R.id.toolbar;
+      Toolbar toolbar = ViewBindings.findChildViewById(rootView, id);
+      if (toolbar == null) {
+        break missingId;
+      }
+
+      return new ActivityMainBinding((ConstraintLayout) rootView, appBarLayout, circularProgress,
+          loadingLayout, loadingText, progressText, recyclerView, searchEditText, searchLayout,
+          toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

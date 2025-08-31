@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:2:1-49:12
+ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:2:1-50:12
 MERGED from [androidx.databinding:viewbinding:8.12.2] C:\Users\dotSlash\.gradle\caches\9.0-milestone-1\transforms\f5468e76f72dcd86f817b1d45baa207c\transformed\jetified-viewbinding-8.12.2\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\dotSlash\.gradle\caches\9.0-milestone-1\transforms\8d933872731d639d1a2fbff4545b98cf\transformed\material-1.11.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\dotSlash\.gradle\caches\9.0-milestone-1\transforms\16fcb08f47d5ea4c100ab7918d9fe81d\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
@@ -61,9 +61,13 @@ uses-permission#android.permission.BIND_VOICE_INTERACTION
 ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:5:5-81
 	android:name
 		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:5:22-78
+uses-permission#android.permission.QUERY_ALL_PACKAGES
+ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:6:5-77
+	android:name
+		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:6:22-74
 application
-ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:7:5-48:19
-INJECTED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:7:5-48:19
+ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:8:5-49:19
+INJECTED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:8:5-49:19
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\dotSlash\.gradle\caches\9.0-milestone-1\transforms\8d933872731d639d1a2fbff4545b98cf\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\dotSlash\.gradle\caches\9.0-milestone-1\transforms\8d933872731d639d1a2fbff4545b98cf\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\dotSlash\.gradle\caches\9.0-milestone-1\transforms\16fcb08f47d5ea4c100ab7918d9fe81d\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -85,75 +89,75 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\dotSlash\.gradle\c
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.12.0] C:\Users\dotSlash\.gradle\caches\9.0-milestone-1\transforms\d9d5e22de9c4ab828043c1f1c75c199a\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:14:9-35
+		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:15:9-35
 	android:label
-		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:12:9-41
+		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:13:9-41
 	android:fullBackupContent
-		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:10:9-54
+		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:11:9-54
 	android:roundIcon
-		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:13:9-54
+		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:14:9-54
 	tools:targetApi
-		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:16:9-29
+		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:17:9-29
 	android:icon
-		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:11:9-43
+		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:12:9-43
 	android:allowBackup
-		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:8:9-35
+		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:15:9-58
+		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:16:9-58
 	android:dataExtractionRules
-		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:9:9-65
+		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:10:9-65
 activity#pro.dotslash.quicklaunchassistant.MainActivity
-ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:18:9-25:20
+ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:19:9-26:20
 	android:exported
-		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:20:13-36
+		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:21:13-36
 	android:name
-		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:19:13-41
+		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:20:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:21:13-24:29
+ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:22:13-25:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:22:17-69
+ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:23:17-69
 	android:name
-		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:22:25-66
+		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:23:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:23:17-77
+ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:24:17-77
 	android:name
-		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:23:27-74
+		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:24:27-74
 activity#pro.dotslash.quicklaunchassistant.AssistantActivity
-ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:27:9-37:20
+ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:28:9-38:20
 	android:excludeFromRecents
-		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:30:13-46
+		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:31:13-46
 	android:launchMode
-		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:31:13-48
+		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:32:13-48
 	android:exported
-		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:32:13-36
+		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:33:13-36
 	android:theme
-		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:29:13-72
+		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:30:13-72
 	android:name
-		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:28:13-46
+		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:29:13-46
 intent-filter#action:name:android.intent.action.ASSIST+category:name:android.intent.category.DEFAULT
-ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:33:13-36:29
+ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:34:13-37:29
 action#android.intent.action.ASSIST
-ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:34:17-71
+ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:35:17-71
 	android:name
-		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:34:25-68
+		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:35:25-68
 category#android.intent.category.DEFAULT
-ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:35:17-76
+ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:36:17-76
 	android:name
-		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:35:27-73
+		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:36:27-73
 service#pro.dotslash.quicklaunchassistant.AssistantService
-ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:39:9-46:19
+ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:40:9-47:19
 	android:exported
-		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:41:13-36
+		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:42:13-36
 	android:permission
-		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:42:13-75
+		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:43:13-75
 	android:name
-		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:40:13-45
+		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:41:13-45
 meta-data#android.voice_interaction
-ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:43:13-45:58
+ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:44:13-46:58
 	android:resource
-		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:45:17-55
+		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:46:17-55
 	android:name
-		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:44:17-57
+		ADDED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml:45:17-57
 uses-sdk
 INJECTED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\dotSlash\Git\QuickLaunchAssistant\app\src\main\AndroidManifest.xml

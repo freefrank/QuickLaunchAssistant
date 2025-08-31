@@ -5,12 +5,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import com.google.android.material.card.MaterialCardView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -18,7 +18,7 @@ import pro.dotslash.quicklaunchassistant.R;
 
 public final class AppListItemBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final MaterialCardView rootView;
 
   @NonNull
   public final ImageView appIcon;
@@ -26,16 +26,20 @@ public final class AppListItemBinding implements ViewBinding {
   @NonNull
   public final TextView appName;
 
-  private AppListItemBinding(@NonNull LinearLayout rootView, @NonNull ImageView appIcon,
-      @NonNull TextView appName) {
+  @NonNull
+  public final TextView packageName;
+
+  private AppListItemBinding(@NonNull MaterialCardView rootView, @NonNull ImageView appIcon,
+      @NonNull TextView appName, @NonNull TextView packageName) {
     this.rootView = rootView;
     this.appIcon = appIcon;
     this.appName = appName;
+    this.packageName = packageName;
   }
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public MaterialCardView getRoot() {
     return rootView;
   }
 
@@ -72,7 +76,13 @@ public final class AppListItemBinding implements ViewBinding {
         break missingId;
       }
 
-      return new AppListItemBinding((LinearLayout) rootView, appIcon, appName);
+      id = R.id.package_name;
+      TextView packageName = ViewBindings.findChildViewById(rootView, id);
+      if (packageName == null) {
+        break missingId;
+      }
+
+      return new AppListItemBinding((MaterialCardView) rootView, appIcon, appName, packageName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

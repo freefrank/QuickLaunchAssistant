@@ -1,10 +1,14 @@
 [
     {
-        "merged": "pro.dotslash.quicklaunchassistant.app-mergeDebugResources-31:/layout/activity_main.xml",
-        "source": "pro.dotslash.quicklaunchassistant.app-main-34:/layout/activity_main.xml"
+        "merged": "C:\\Users\\dotSlash\\.gradle\\daemon\\9.0-milestone-1\\pro.dotslash.quicklaunchassistant.app-mergeDebugResources-31:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\dotSlash\\.gradle\\daemon\\9.0-milestone-1\\pro.dotslash.quicklaunchassistant.app-main-34:\\layout\\activity_main.xml"
     },
     {
-        "merged": "pro.dotslash.quicklaunchassistant.app-mergeDebugResources-31:/layout/app_list_item.xml",
-        "source": "pro.dotslash.quicklaunchassistant.app-main-34:/layout/app_list_item.xml"
+        "merged": "C:\\Users\\dotSlash\\.gradle\\daemon\\9.0-milestone-1\\pro.dotslash.quicklaunchassistant.app-mergeDebugResources-31:\\layout\\app_list_item.xml",
+        "source": "C:\\Users\\dotSlash\\.gradle\\daemon\\9.0-milestone-1\\pro.dotslash.quicklaunchassistant.app-main-34:\\layout\\app_list_item.xml"
+    },
+    {
+        "merged": "pro.dotslash.quicklaunchassistant.app-mergeDebugResources-31:/layout/activity_main.xml",
+        "source": "pro.dotslash.quicklaunchassistant.app-main-34:/layout/activity_main.xml"
     }
 ]

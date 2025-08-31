@@ -1,4 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="ic_launcher_background">#1F1F1F</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- App Theme Colors -->
+    <color name="primary_color">#2196F3</color>
+    <color name="primary_variant">#1976D2</color>
+    <color name="secondary_color">#03DAC6</color>
+    <color name="background_color">#F5F5F5</color>
+    <color name="surface_color">#FFFFFF</color>
+    
+    <!-- Text Colors -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_hint">#9E9E9E</color>
+    
+    <!-- UI Elements -->
+    <color name="progress_track_color">#E3F2FD</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="divider_color">#E0E0E0</color>
+    <color name="ripple_color">#1976D2</color>
+    
+    <!-- Status Colors -->
+    <color name="success_color">#4CAF50</color>
+    <color name="warning_color">#FF9800</color>
+    <color name="error_color">#F44336</color>
+    
+    <!-- Search specific colors for better contrast -->
+    <color name="search_background">#FFFFFF</color>
+    <color name="search_stroke">#E0E0E0</color>
+    <color name="search_hint">#666666</color>
 </resources>

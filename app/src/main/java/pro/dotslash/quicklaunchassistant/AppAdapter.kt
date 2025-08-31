@@ -8,13 +8,14 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 class AppAdapter(
-    private val apps: List<AppInfo>,
+    private var apps: List<AppInfo>,
     private val onItemClick: (AppInfo) -> Unit
 ) : RecyclerView.Adapter<AppAdapter.ViewHolder>() {
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val appIcon: ImageView = view.findViewById(R.id.app_icon)
         val appName: TextView = view.findViewById(R.id.app_name)
+        val packageName: TextView = view.findViewById(R.id.package_name)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -27,9 +28,15 @@ class AppAdapter(
         val app = apps[position]
         holder.appIcon.setImageDrawable(app.icon)
         holder.appName.text = app.name
+        holder.packageName.text = app.packageName
         holder.itemView.setOnClickListener {
             onItemClick(app)
         }
+    }
+    
+    fun updateApps(newApps: List<AppInfo>) {
+        apps = newApps
+        notifyDataSetChanged()
     }
 
     override fun getItemCount() = apps.size
