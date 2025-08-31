@@ -39,4 +39,10 @@ libs/
 # OS-specific files
 .DS_Store
 Thumbs.db
+
+# AI development files
 gemini.md
+CLAUDE.md
+
+# Android build outputs
+app/build/

@@ -27,7 +27,10 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew assembleRelease
 
+      - name: List build outputs
+        run: find app/build/outputs -name "*.apk" -type f
+
       - name: Create Release and Upload APK
         uses: softprops/action-gh-release@v1
         with:
-          files: app/build/outputs/apk/release/app-release.apk
+          files: app/build/outputs/apk/release/*.apk
