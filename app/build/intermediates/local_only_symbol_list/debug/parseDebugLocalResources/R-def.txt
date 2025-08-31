@@ -1,0 +1,18 @@
+R_DEF: Internal format may change without notice
+local
+color ic_launcher_background
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id app_icon
+id app_name
+id recyclerView
+layout activity_main
+layout app_list_item
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Base.Theme.QuickLaunchAssistant
+style Theme.QuickLaunchAssistant
+xml assist_service
+xml backup_rules
+xml data_extraction_rules

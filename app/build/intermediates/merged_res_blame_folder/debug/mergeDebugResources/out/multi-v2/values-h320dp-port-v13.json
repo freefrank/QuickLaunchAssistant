@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "pro.dotslash.quicklaunchassistant.app-mergeDebugResources-30:/values-h320dp-port-v13/values-h320dp-port-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\dotSlash\\.gradle\\caches\\9.0-milestone-1\\transforms\\8d933872731d639d1a2fbff4545b98cf\\transformed\\material-1.11.0\\res\\values-h320dp-port-v13\\values-h320dp-port-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "63",
+                        "endOffsets": "114"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+# Folders containing generated code, assets, etc.
+/build
+/captures
+
+# Gradle files
+.gradle/
+/local.properties
+
+# IDE files
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Built application files
+*.apk
+*.aab
+*.aar
+*.ap_
+
+# Files for the Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Keystore files
+*.jks
+*.keystore
+
+# NDK files
+.externalNativeBuild/
+obj/
+libs/
+
+# Log files
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+gemini.md

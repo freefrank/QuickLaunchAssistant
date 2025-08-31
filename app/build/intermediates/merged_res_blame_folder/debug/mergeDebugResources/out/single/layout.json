@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "pro.dotslash.quicklaunchassistant.app-mergeDebugResources-31:/layout/activity_main.xml",
+        "source": "pro.dotslash.quicklaunchassistant.app-main-34:/layout/activity_main.xml"
+    },
+    {
+        "merged": "pro.dotslash.quicklaunchassistant.app-mergeDebugResources-31:/layout/app_list_item.xml",
+        "source": "pro.dotslash.quicklaunchassistant.app-main-34:/layout/app_list_item.xml"
+    }
+]

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ic_launcher_background">#1F1F1F</color>
+    <string name="app_name">QuickLaunch Assistant</string>
+    <style name="Base.Theme.QuickLaunchAssistant" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.QuickLaunchAssistant" parent="Base.Theme.QuickLaunchAssistant"/>
+</resources>
