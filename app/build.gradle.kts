@@ -3,6 +3,30 @@ plugins {
     id("org.jetbrains.kotlin.android")
 }
 
+fun getGitTag(): String {
+    return try {
+        val process = ProcessBuilder("git", "describe", "--tags", "--always", "--dirty")
+            .directory(rootDir)
+            .start()
+        val result = process.inputStream.bufferedReader().readText().trim()
+        if (result.isEmpty()) "dev" else result
+    } catch (e: Exception) {
+        "dev"
+    }
+}
+
+fun getVersionCode(): Int {
+    return try {
+        val process = ProcessBuilder("git", "rev-list", "--count", "HEAD")
+            .directory(rootDir)
+            .start()
+        val result = process.inputStream.bufferedReader().readText().trim()
+        if (result.isEmpty()) 1 else result.toInt()
+    } catch (e: Exception) {
+        1
+    }
+}
+
 android {
     namespace = "pro.dotslash.quicklaunchassistant"
     compileSdk = 34
@@ -11,8 +35,8 @@ android {
         applicationId = "pro.dotslash.quicklaunchassistant"
         minSdk = 24
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = getVersionCode()
+        versionName = getGitTag()
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }

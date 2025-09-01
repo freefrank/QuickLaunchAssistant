@@ -9,14 +9,33 @@ class AssistantActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val prefs = getSharedPreferences("prefs", Context.MODE_PRIVATE)
-        val packageName = prefs.getString("selected_app", null)
+        val (packageName, className) = PreferenceHelper.getSelectedAppInfo(this)
 
         if (packageName != null) {
-            val intent = packageManager.getLaunchIntentForPackage(packageName)
+            val intent = if (className != null) {
+                // Launch specific activity
+                ActivityHelper.createActivityIntent(packageName, className)
+            } else {
+                // Launch default activity
+                packageManager.getLaunchIntentForPackage(packageName)?.apply {
+                    addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                    addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+                }
+            }
+            
             if (intent != null) {
-                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-                startActivity(intent)
+                try {
+                    startActivity(intent)
+                } catch (e: Exception) {
+                    // If specific activity fails, try launching the default
+                    if (className != null) {
+                        val fallbackIntent = packageManager.getLaunchIntentForPackage(packageName)
+                        if (fallbackIntent != null) {
+                            fallbackIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                            startActivity(fallbackIntent)
+                        }
+                    }
+                }
             }
         }
         finish()

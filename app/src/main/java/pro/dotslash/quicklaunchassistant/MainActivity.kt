@@ -43,8 +43,12 @@ class MainActivity : AppCompatActivity() {
         val loadingText: TextView = findViewById(R.id.loadingText)
         val progressText: TextView = findViewById(R.id.progressText)
         searchEditText = findViewById(R.id.searchEditText)
+        val versionText: TextView = findViewById(R.id.version_text)
 
         recyclerView.layoutManager = LinearLayoutManager(this)
+        
+        // Setup version display
+        setupVersionDisplay(versionText)
         
         // Setup search functionality
         setupSearch()
@@ -58,11 +62,16 @@ class MainActivity : AppCompatActivity() {
                 getInstalledAppsWithProgress(circularProgress, progressText)
             }
 
-            adapter = AppAdapter(allApps) { appInfo ->
-                val prefs = getSharedPreferences("prefs", Context.MODE_PRIVATE)
-                prefs.edit().putString("selected_app", appInfo.packageName).apply()
-                finish()
-            }
+            adapter = AppAdapter(
+                allApps,
+                onItemClick = { appInfo ->
+                    PreferenceHelper.saveSelectedApp(this@MainActivity, appInfo.packageName)
+                    finish()
+                },
+                onItemLongClick = { appInfo ->
+                    showActivitySelectionDialog(appInfo)
+                }
+            )
             recyclerView.adapter = adapter
 
             // Smooth transition
@@ -137,5 +146,48 @@ class MainActivity : AppCompatActivity() {
 
         val (priorityApps, otherApps) = apps.partition { priorityPackageNames.contains(it.packageName) }
         return priorityApps.sortedBy { it.name } + otherApps.sortedBy { it.name }
+    }
+
+    private fun showActivitySelectionDialog(appInfo: AppInfo) {
+        lifecycleScope.launch {
+            val activities = withContext(Dispatchers.IO) {
+                ActivityHelper.getAppActivities(this@MainActivity, appInfo.packageName)
+            }
+            
+            if (activities.size <= 1) {
+                // If only one activity, just select it directly
+                PreferenceHelper.saveSelectedApp(this@MainActivity, appInfo.packageName)
+                finish()
+                return@launch
+            }
+            
+            ActivitySelectionDialog.show(
+                this@MainActivity,
+                appInfo,
+                activities,
+                onActivitySelected = { selectedActivity ->
+                    PreferenceHelper.saveSelectedApp(
+                        this@MainActivity, 
+                        selectedActivity.packageName, 
+                        selectedActivity.className
+                    )
+                    finish()
+                },
+                onDefaultSelected = {
+                    PreferenceHelper.saveSelectedApp(this@MainActivity, appInfo.packageName)
+                    finish()
+                }
+            )
+        }
+    }
+
+    private fun setupVersionDisplay(versionText: TextView) {
+        try {
+            val packageInfo = packageManager.getPackageInfo(packageName, 0)
+            val versionName = packageInfo.versionName ?: "?.?"
+            versionText.text = versionName
+        } catch (e: Exception) {
+            versionText.text = "?.?"
+        }
     }
 }

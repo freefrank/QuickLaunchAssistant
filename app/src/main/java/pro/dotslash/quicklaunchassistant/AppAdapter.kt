@@ -9,7 +9,8 @@ import androidx.recyclerview.widget.RecyclerView
 
 class AppAdapter(
     private var apps: List<AppInfo>,
-    private val onItemClick: (AppInfo) -> Unit
+    private val onItemClick: (AppInfo) -> Unit,
+    private val onItemLongClick: ((AppInfo) -> Unit)? = null
 ) : RecyclerView.Adapter<AppAdapter.ViewHolder>() {
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
@@ -31,6 +32,11 @@ class AppAdapter(
         holder.packageName.text = app.packageName
         holder.itemView.setOnClickListener {
             onItemClick(app)
+        }
+        
+        holder.itemView.setOnLongClickListener {
+            onItemLongClick?.invoke(app)
+            true
         }
     }
     

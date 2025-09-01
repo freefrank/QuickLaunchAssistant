@@ -31,4 +31,7 @@
     <color name="search_background">#FFFFFF</color>
     <color name="search_stroke">#E0E0E0</color>
     <color name="search_hint">#666666</color>
+    
+    <!-- Activity Selection Dialog -->
+    <color name="accent_color">#FF5722</color>
 </resources>
